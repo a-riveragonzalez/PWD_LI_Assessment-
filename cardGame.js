@@ -92,8 +92,11 @@ class Deck {
 
 // 5. create a function that runs the random card method on each deck, and compares the values of the 2 random cards
 function playWar() {
+  // create two instances of the deck
   let deck1 = new Deck().generateDeck();
   let deck2 = new Deck().generateDeck();
+
+  // creating the random card from each instance of the decks
   let player1Card = new Deck().getRandomCard(deck1);
   let player2Card = new Deck().getRandomCard(deck2);
 
